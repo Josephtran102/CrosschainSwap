@@ -253,7 +253,7 @@ contract Bridge is Ownable, ILayerZeroReceiver, ILayerZeroUserApplicationConfig 
     }
 
     //---------------------------------------------------------------------------
-    // INTERNAL functions
+    // INTERNAL FUNCTIONS
     function txParamBuilderType1(uint256 _gasAmount) internal pure returns (bytes memory) {
         uint16 txType = 1;
         return abi.encodePacked(txType, _gasAmount);
